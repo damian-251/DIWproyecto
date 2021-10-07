@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Para cualquier consulta ponte en contacto con nosotros a través del siguiente formulario o en el teléfono 666569874"/>
+    <title>El científico curioso - Contacto</title>
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <figure>
+                <a href="index.html"><img width="250" height="98" src="assets/images/logo.png" alt="El Científico Curioso"></a>
+            </figure>
+
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </nav>
+
+        <div class="search">
+            <input type="text" placeholder="Cercador" name="search">
+        </div>
+    </header>
+    <section>
+        <h1>Formulario de contacto</h1>
+
+    <form id="contactForm">
+        <fieldset>
+            <legend>Dades personals</legend>
+            <label>Nom: </label>
+            <input name="name" type="text" pattern="[a-zA-Z0-9]{1,30}" required placeholder="Escriu el nom"  autofocus/>
+            <br>
+            <label>Correu Electrònic: </label>
+            <input name="email" type="email" required placeholder="Escriu el teu correu"/>
+            <br>
+            <label>Edat: </label>
+            <input name="age" type="text" pattern="1[8-9]|[2-9][0-9]" required placeholder="Escriu la teua edat">
+            <br>
+            <label>Telèfon: </label>
+            <input name="phone" type="tel" required placeholder="Ex: 666666666" pattern="[0-9]{9}">
+            <br>
+            <label>Consulta: </label>
+            <br>
+            <textarea name="textarea" rows="10" cols="50" placeholder="Escriu ací el teu missatge" required></textarea>
+            <br>
+            <input type="checkbox" id="privacy" required>
+            <label for="privacy">Accepte les polítiques de privacitat i de cookies.</label>
+            <br>
+            <button id="submit" name="submit" type="submit">Enviar</button>
+        </fieldset>
+    </form>
+    </section>
+    <section>
+        <h2>Dades de contacte</h2>
+        <p>Correu Electrònic: <a href="mailto:empresa@email.com">empresa@email.com</a> </p>
+        <p>Telèfon: <a href="tel:+34666569874">+34 666 56 98 74</a></p>
+    </section>
+
+    <footer>
+        <div class="redesSociales">
+            <figure>
+                <a href="https://www.facebook.com/site" target="_blank"><img width="50" height="50" src="assets/images/icons/facebook.png" alt="Facebook"></a>
+            </figure>
+            <figure>
+                <a href="https://www.twitter.com/site" target="_blank"> <img width="50" height="50" src="assets/images/icons/twitter.png" alt="Twitter"></a>
+            </figure>
+            <figure>
+                <a href="https://whatsapp/site" target="_blank"> <img width="50" height="50" src="assets/images/icons/whatsapp.png" alt="WhatsApp"></a>
+            </figure>
+        </div>
+        <div class="contacto">
+            <p><a href="mailto:empresa@email.com">empresa@email.com</a></p>
+            <p><a href="tel:+34666569874">+34 666 56 98 74</a></p>
+        </div>
+    </footer>
+</body>
+
+</html>
