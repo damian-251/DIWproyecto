@@ -1,44 +1,24 @@
 @font-face {
     font-family: 'pt_serifregular';
-    src: local('pt_serifregular'),
-    url("PTSerif-Regular.ttf") format('truetype'), 
-    url("ptserif-regular-webfont.woff2") format('woff2'), 
-    url("ptserif-regular-webfont.woff") format('woff'),
-    url("PTSerif-Regular.eot") format('eot'),
-    url("PTSerif-Regular.svg") format('svg');
-}
-
-
-
-@font-face { 
-    font-family: 'Open Sans'; 
-    src: local('Open Sans'),         
-    url(OpenSans.ttf) format('truetype'); 
+    src: local('pt_serifregular'), url("../webfonts/PTSerif-Regular.ttf") format('truetype'), url("../webfonts/ptserif-regular-webfont.woff2") format('woff2'), url("../webfonts/ptserif-regular-webfont.woff") format('woff'), url("../webfonts/PTSerif-Regular.eot") format('eot'), url("../webfonts/PTSerif-Regular.svg") format('svg');
 }
 
 @font-face {
     font-family: 'pt_serifitalic';
-    src: local('pt_serifitalic'), 
-    url(assets/webfonts/PTSerif-Italic.ttf) format('ttf'), 
-    url(assets/webfonts/ptserif-italic-webfont.woff2) format('woff2'), 
-    url(assets/webfonts/ptserif-italic-webfont.woff) format('woff');
+    src: local('pt_serifitalic'), url("../webfonts/PTSerif-Italic.ttf") format('ttf'), url("../webfonts/ptserif-italic-webfont.woff2") format('woff2'), url("../webfonts/ptserif-italic-webfont.woff") format('woff');
 }
 
 @font-face {
     font-family: 'pt_serifbold_italic';
-    src: local('pt_serifbold_italic'), 
-    url(assets/webfonts/PTSerif-BoldItalic.ttf) format('ttf'), 
-    url(assets/webfonts/ptserif-bolditalic-webfont.woff2) format('woff2'), 
-    url(assets/webfonts/ptserif-bolditalic-webfont.woff) format('woff');
+    src: local('pt_serifbold_italic'), url("../webfonts/PTSerif-BoldItalic.ttf") format('ttf'), url("../webfonts/ptserif-bolditalic-webfont.woff2") format('woff2'), url("../webfonts/ptserif-bolditalic-webfont.woff") format('woff');
 }
 
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-
 * {
     /* Margen exterior y margen interior */
     margin: 0px;
     padding: 0px;
-    font-family: 'PT Serif', serif;
+    font-family: 'pt_serifregular', monospace;
 }
 
 html {
@@ -51,28 +31,37 @@ div, aside {
     background-color: white;
 }
 
+.header-logo {
+    position: absolute;
+    background-color:#3a3a71;
+    width: 220px;
+    height: 86px;
+}
+
 nav {
     background-color: #3a3a71;
     font-size: 1.5em;
     color: white;
 }
 
-nav ul{
+nav ul {
     list-style: none;
     text-align: center;
     vertical-align: top;
 }
-nav li{
+
+nav li {
     list-style-type: none;
     padding: 0px;
     display: inline;
 }
-nav li a{
+
+nav li a {
     color: white;
     font-size: 1em;
     text-decoration: none;
-    line-height: 70px;
-    padding: 10px 10px;
+    line-height: 86px;
+    padding: 10px 10px 10px 10px;
 }
 
 h1, h2 {
@@ -97,19 +86,21 @@ footer div {
 }
 
 /* Seleciona todos los elementos a dentro del footer */
+
 footer a {
     color: white;
 }
 
 /* -- Iconos font awesome -- */
 
-
 /* Elementos con la clase icon y blog */
+
 .icon.blog {
     font-size: 3em;
 }
 
 /* Todos los span descendientes de nav */
+
 .nav .span {
     font-size: 1em;
     color: white;
@@ -118,7 +109,7 @@ footer a {
 /* IDs */
 
 #iconaw1 {
-    color: #3a3a71;    
+    color: #3a3a71;
 }
 
 #iconaw2 {
@@ -126,5 +117,5 @@ footer a {
 }
 
 #iconaw3 {
-    color:lightsalmon
+    color: lightsalmon
 }
