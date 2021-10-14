@@ -81,3 +81,28 @@ footer div {
 footer a {
     color: white;
 }
+
+/* Iconos font awesome */
+
+
+
+.icon.blog {
+    font-size: 3em;
+}
+
+.nav .span {
+    font-size: 1em;
+    color: white;
+}
+
+#iconaw1 {
+    color: #3a3a71;    
+}
+
+#iconaw2 {
+    color: chartreuse;
+}
+
+#iconaw3 {
+    color:lightsalmon
+}
