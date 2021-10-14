@@ -8,6 +8,8 @@
     url("PTSerif-Regular.svg") format('svg');
 }
 
+
+
 @font-face { 
     font-family: 'Open Sans'; 
     src: local('Open Sans'),         
@@ -30,11 +32,13 @@
     url(assets/webfonts/ptserif-bolditalic-webfont.woff) format('woff');
 }
 
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 * {
     /* Margen exterior y margen interior */
     margin: 0px;
     padding: 0px;
-    font-family: 'Open Sans', Arial;
+    font-family: 'PT Serif', serif;
 }
 
 html {
@@ -53,8 +57,22 @@ nav {
     color: white;
 }
 
-nav a {
+nav ul{
+    list-style: none;
+    text-align: center;
+    vertical-align: top;
+}
+nav li{
+    list-style-type: none;
+    padding: 0px;
+    display: inline;
+}
+nav li a{
     color: white;
+    font-size: 1em;
+    text-decoration: none;
+    line-height: 70px;
+    padding: 10px 10px;
 }
 
 h1, h2 {
@@ -78,22 +96,26 @@ footer div {
     color: white;
 }
 
+/* Seleciona todos los elementos a dentro del footer */
 footer a {
     color: white;
 }
 
-/* Iconos font awesome */
+/* -- Iconos font awesome -- */
 
 
-
+/* Elementos con la clase icon y blog */
 .icon.blog {
     font-size: 3em;
 }
 
+/* Todos los span descendientes de nav */
 .nav .span {
     font-size: 1em;
     color: white;
 }
+
+/* IDs */
 
 #iconaw1 {
     color: #3a3a71;    
