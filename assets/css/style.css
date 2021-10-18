@@ -33,6 +33,11 @@ div, aside {
     background-color: white;
 }
 
+/* Propiedades de los enlaces en general */
+a {
+    text-decoration: none;
+}
+
 .header-logo {
     position: absolute;
     background-color: #3a3a71;
@@ -60,6 +65,7 @@ nav li {
     display: inline;
 }
 
+/* Propiedades de los enlaces del nav */
 nav li a {
     color: white;
     font-size: 1em;
@@ -67,6 +73,27 @@ nav li a {
     line-height: 86px;
     padding: 10px 10px 10px 10px;
 }
+
+nav li a:hover {
+    font-weight: bold;
+    background-color: #4f4f70;
+}
+
+nav li a:visited {
+
+}
+
+nav li a:active {
+    background-color:#353840;
+    color: white;
+
+}
+
+/* Propiedades de los enlaces del aside del blog */
+
+
+
+
 
 /* aside */
 
@@ -100,6 +127,10 @@ h3 {
 }
 
 /* Tabla sección servicios */
+
+.div-servicios {
+    margin: 30px;
+}
 
 .tabla-servicios {
     caption-side: bottom;
