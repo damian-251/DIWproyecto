@@ -20,13 +20,20 @@
     /* Margen exterior y margen interior */
     margin: 0px;
     padding: 0px;
-    font-family: 'pt_serifregular', monospace;
+    font-family: 'pt_serifregular', 'PT Serif', serif;
 }
 
+/* Fondo fuera de los contenedores y tamaño de fuente predeterminado */
 html {
     background-color: whitesmoke;
     color: #353840;
     font-size: 1em;
+}
+
+
+/* Para que no se superponga encima del menú */
+.contenido {
+    padding-top: 90px;
 }
 
 div, aside {
@@ -38,16 +45,18 @@ a {
     text-decoration: none;
 }
 
-.header-logo {
-    position: absolute;
-    background-color: #3a3a71;
-    width: 220px;
-    height: 86px;
+a:hover {
+    color: rgb(151, 255, 255)
 }
+
+
 
 /* Menú de navegación */
 
 nav {
+    position: fixed;
+    right:0%;
+    left: 220px;
     background-color: #3a3a71;
     font-size: 1.5em;
     color: white;
@@ -65,23 +74,26 @@ nav li {
     display: inline;
 }
 
+.header-logo {
+    position: fixed;
+    background-color: #3a3a71;
+    width: 220px;
+    height: 86px;
+}
+
 /* Propiedades de los enlaces del nav */
 nav li a {
     color: white;
     font-size: 1em;
     text-decoration: none;
     line-height: 86px;
-    padding: 10px 10px 10px 10px;
+    padding: 10px;
 }
 
 nav li a:hover {
-    font-weight: bold;
     background-color: #4f4f70;
 }
 
-nav li a:visited {
-
-}
 
 nav li a:active {
     background-color:#353840;
@@ -89,11 +101,14 @@ nav li a:active {
 
 }
 
+
+/* Interior del menú de navegación */
+
+.menu-text {
+    margin-left: -10%;
+}
+
 /* Propiedades de los enlaces del aside del blog */
-
-
-
-
 
 /* aside */
 
@@ -104,8 +119,7 @@ aside ul {
 }
 
 aside ul li a:hover {
-    background-color: #3a3a71;
-    color: white;
+    color: rgb(184, 218, 238);
 }
 
 /* Cabeceras */
@@ -163,6 +177,16 @@ tr:nth-child(even) {
 footer div {
     background-color: #3a3a71;
     color: white;
+}
+
+
+/* Icono de Whatsapp fijo */
+
+.whatsapp-figure {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+   
 }
 
 /* Seleciona todos los elementos a dentro del footer */
