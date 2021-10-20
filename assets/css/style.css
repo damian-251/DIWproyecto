@@ -21,6 +21,7 @@
     margin: 0px;
     padding: 0px;
     font-family: 'pt_serifregular', 'PT Serif', serif;
+    box-sizing: border-box;
 }
 
 /* Fondo fuera de los contenedores y tamaño de fuente predeterminado */
@@ -34,6 +35,10 @@ html {
 /* Para que no se superponga encima del menú */
 .contenido {
     padding-top: 90px;
+}
+
+header {
+    overflow: hidden;
 }
 
 div, aside {
@@ -130,10 +135,40 @@ nav li a:active {
 
 /* aside */
 
+/* Propiedades del blog */
+
+.contenido-blog {
+    max-width: 1000px;
+    padding-top: 150px;
+    margin: 0 auto;
+}
+
+.entradas-blog {
+    width: 70%;
+    float: left;
+    padding: 15px;
+    background-color: white;
+}
+
+.entradas-blog p {
+    margin-bottom: 1.5em;
+}
+
+aside {
+    float: right;
+    width: 30%;
+    padding: 30px;
+
+}
+
+section article {
+    margin-bottom: 45px;
+}
+
 aside ul {
     margin-left: 30px;
-    /* Es temporal para que se vean los iconos que tapaban el margen 0 */
     list-style-image: url('../images/icons/aside-icon.png');
+
 }
 
 aside ul li a:hover {
@@ -148,16 +183,67 @@ h1, h2 {
 
 h1 {
     font-size: 2.5em;
+    margin-bottom: 1.5em;
 }
 
 h2 {
     font-size: 1.7em;
+    margin-bottom: 1em;
 }
 
 h3 {
     font-size: 1.6em;
 }
 
+/* FORMULARIO */
+
+.h1-formulario {
+    text-align: center;  
+    margin-bottom: 10px;
+}
+
+form {
+    max-width: 50%;
+    margin: 0 auto;
+    padding: 1.5em;
+    background-color: white;
+}
+
+label {
+    display: block;
+    text-align: center;
+    padding: 1em;
+}
+
+form input, form textarea {
+    display:block;
+    box-sizing: border-box;
+    resize: none;
+    margin: 0 auto;
+    font-size: 1em;
+    width: 100%;
+    padding: 1em;
+}
+
+
+
+button {
+    display: block;
+}
+
+/* Alienar checkbox con el texto */
+
+.input-privacy, .label-privacy {
+    margin-top: 20px;
+    display: inline;
+    width: unset;
+    margin-left: 0px;
+    padding-left: 0px;
+}
+
+.contenido section {
+    background-color: whitesmoke;
+}
 /* Tabla sección servicios */
 
 .div-servicios {
@@ -192,7 +278,13 @@ tr:nth-child(even) {
 
 /* Footer  */
 
+footer {
+    width: 100%;
+    overflow: hidden;
+}
+
 footer div {
+    clear: both;
     background-color: #3a3a71;
     color: white;
 }
