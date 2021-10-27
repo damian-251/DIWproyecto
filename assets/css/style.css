@@ -147,8 +147,9 @@ nav li a:active {
     display: block;
 }
 
+/* Arreglo porque no sale la barra de búsqueda como en otras páginas */
 .body-blog .search input{
-    margin: 96px auto;
+    margin: 96px auto 30px auto;
 }
 
 /* Propiedades de los enlaces del aside del blog */
