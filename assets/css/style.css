@@ -54,10 +54,15 @@ div, aside {
 
 a {
     text-decoration: none;
+    color: #3a3a71;
 }
 
 a:hover {
     color: rgb(151, 255, 255)
+}
+
+a:visited {
+    color: #3a3a71;
 }
 
 /* Menú de navegación */
@@ -93,7 +98,7 @@ nav li {
 /* Propiedades de los enlaces del nav */
 
 nav li a {
-    color: white;
+    color: white !important;
     font-size: 1em;
     text-decoration: none;
     line-height: 86px;
@@ -135,10 +140,10 @@ nav li a:active {
 
 /* Barra de búsqueda */
 
-
 .search {
     background-color: whitesmoke;
 }
+
 .search input {
     box-sizing: border-box;
     width: 50%;
@@ -148,7 +153,8 @@ nav li a:active {
 }
 
 /* Arreglo porque no sale la barra de búsqueda como en otras páginas */
-.body-blog .search input{
+
+.body-blog .search input {
     margin: 96px auto 30px auto;
 }
 
@@ -161,7 +167,6 @@ nav li a:active {
 .contenido-blog {
     max-width: 1000px;
     margin: 0 auto;
-    margin-top: 86px;
 }
 
 .entradas-blog {
@@ -300,6 +305,10 @@ form button:hover {
 
 /* Tabla sección servicios */
 
+.body-servicios h1 {
+    margin-left: 30px;
+}
+
 .div-servicios {
     margin: 30px;
 }
@@ -394,4 +403,80 @@ footer a {
 
 #iconaw3 {
     color: lightsalmon
+}
+
+/* Media Queries */
+
+/* Aplicamos al blog para probar */
+
+/* A más anchura la página se ve prácticamente como en pantalla completa */
+
+@media (max-width: 840px) {
+    form {
+        max-width: 80%;
+    }
+    form button {
+        margin: 1em auto 1em auto;
+    }
+    nav {
+        display: none;
+    }
+    /* Propiedades blog */
+    aside {
+        float: unset;
+        width: unset;
+    }
+    .entradas-blog {
+        width: unset;
+        float: none;
+    }
+    /* Hacemos que el vídeo ocupe lo necesario */
+    article>.video>iframe {
+        width: 95%;
+    }
+    .search input {
+        width: 80%
+    }
+}
+
+@media (max-width: 400px) {
+    /* Reducir el tamaño del logo
+    Hacemos que deje de estar fijo */
+    .header-logo {
+        position: absolute;
+        width: 154px;
+        height: 60px;
+    }
+    /* Propiedades blog */
+    aside {
+        float: unset;
+        width: unset;
+    }
+    .entradas-blog {
+        width: unset;
+        float: none;
+    }
+    /* Hacemos que el vídeo ocupe lo necesario */
+    article>.video>iframe {
+        width: auto;
+    }
+    /*Eliminamos el menú hasta que no implementemos el menú hamburguesa */
+    nav {
+        display: none;
+    }
+    /* Formulario de contacto */
+    /* Hacemos que ocupe más porcentaje de la pantalla*/
+    form {
+        max-width: 90%;
+    }
+    /* Botón enviar centrado y algo más pequeño */
+    form button {
+        font-size: unset;
+        margin: 1em auto 1em auto;
+    }
+    /* --- SERVICIOS --- */
+    /* -- BARRA DE BÚSQUEDA */
+    .search input {
+        width: 90%
+    }
 }

@@ -1,0 +1,32 @@
+/* Estilo de la página web para la impresión */
+/* 
+¿Qué hay que hacer?
+- Primero aplicamos al Blog
+- No imprimir el header
+- No imprimir el footer
+- No imprimir el menú
+- No imprimir el aside
+*/
+
+/* Se elimina el menú, el header, el footer y la barra de búsqueda */
+
+header, aside, footer, .search {
+    display: none;
+}
+/* Al desaparecer el aside podemos disminuir los márgenes */
+
+.contenido-blog, .entradas-blog {
+    width: unset;
+}
+
+/* Hacemos aparezca más arriba el contenido del blog */
+
+.contenido-blog {
+    margin-top: unset;
+}
+
+/* Eliminamos los vídeos ya que no es necesario imprimirlos */
+
+article > .video {
+    display: none;
+}
