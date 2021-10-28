@@ -10,6 +10,8 @@
 
 /* Se elimina el menú, el header, el footer y la barra de búsqueda */
 
+
+
 header, aside, footer, .search {
     display: none;
 }
@@ -17,6 +19,8 @@ header, aside, footer, .search {
 
 .contenido-blog, .entradas-blog {
     width: unset;
+    box-shadow: none;
+
 }
 
 /* Hacemos aparezca más arriba el contenido del blog */

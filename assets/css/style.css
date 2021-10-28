@@ -44,10 +44,13 @@ html {
 
 header {
     overflow: hidden;
+
 }
+
 
 div, aside {
     background-color: white;
+
 }
 
 /* Propiedades de los enlaces en general */
@@ -74,6 +77,8 @@ nav {
     background-color: #3a3a71;
     font-size: 1.5em;
     color: white;
+    box-shadow: 4px 4px 4px 1px rgba(0,0,0,0.47);
+
 }
 
 nav ul {
@@ -93,6 +98,8 @@ nav li {
     background-color: #3a3a71;
     width: 220px;
     height: 86px;
+    box-shadow: 4px 4px 4px 1px rgba(0,0,0,0.47);
+
 }
 
 /* Propiedades de los enlaces del nav */
@@ -119,6 +126,7 @@ nav li a:active {
 .menu-text {
     margin-left: -10%;
 }
+
 
 /* Página princial */
 
@@ -156,6 +164,7 @@ nav li a:active {
 
 .body-blog .search input {
     margin: 96px auto 30px auto;
+
 }
 
 /* Propiedades de los enlaces del aside del blog */
@@ -167,6 +176,7 @@ nav li a:active {
 .contenido-blog {
     max-width: 1000px;
     margin: 0 auto;
+
 }
 
 .entradas-blog {
@@ -176,6 +186,10 @@ nav li a:active {
     background-color: white;
     padding-left: 2.5em;
     padding-right: 2.5em;
+    box-shadow: 4px 4px 4px 1px rgba(0,0,0,0.47);
+    margin-bottom: 1.5em;
+
+
 }
 
 .entradas-blog img {
@@ -188,6 +202,7 @@ nav li a:active {
 
 .entradas-blog ol {
     list-style-position: inside;
+
 }
 
 aside {
@@ -195,7 +210,10 @@ aside {
     width: 25%;
     padding: 10px;
     margin-right: 2em;
+    box-shadow: 4px 4px 4px 1px rgba(0,0,0,0.47);
 }
+
+
 
 section article {
     margin-bottom: 45px;
@@ -206,9 +224,19 @@ aside ul {
     list-style-image: url('../images/icons/aside-icon.png');
 }
 
+aside ul li {
+   line-height: 1.8em;
+}
+
 aside ul li a:hover {
     color: rgb(184, 218, 238);
 }
+
+.aside-blog div {
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+}
+
 
 /* Cabeceras */
 
@@ -239,9 +267,10 @@ h3 {
 
 form {
     max-width: 50%;
-    margin: 0 auto;
+    margin: 1em auto;
     padding: 1.5em;
     background-color: white;
+    box-shadow: 4px 4px 4px 1px rgba(0,0,0,0.47);
 }
 
 label {
@@ -307,10 +336,13 @@ form button:hover {
 
 .body-servicios h1 {
     margin-left: 30px;
+    margin-bottom: unset;
 }
 
 .div-servicios {
     margin: 30px;
+    box-shadow: 4px 4px 4px 1px rgba(0,0,0,0.47);
+
 }
 
 .tabla-servicios {
@@ -318,6 +350,8 @@ form button:hover {
     table-layout: auto;
     width: 100%;
     border-collapse: collapse;
+
+
 }
 
 tr, th, td {
@@ -344,6 +378,7 @@ tr:nth-child(even) {
 footer {
     width: 100%;
     overflow: hidden;
+
 }
 
 footer div {
@@ -403,6 +438,12 @@ footer a {
 
 #iconaw3 {
     color: lightsalmon
+}
+
+#gradiente {
+    background: rgb(255,255,255);
+background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(255,255,255,1) 100%);
+    
 }
 
 /* Media Queries */
