@@ -176,7 +176,7 @@ nav li a:active {
 .contenido-blog {
     max-width: 1000px;
     margin: 0 auto;
-
+    background-color: whitesmoke;
 }
 
 .entradas-blog {
@@ -464,13 +464,22 @@ background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 
     }
     /* Propiedades blog */
     aside {
-        float: unset;
+        float: none;
         width: unset;
+        margin: 1.5em;
+        display: inline-block;
+        padding: 1.5em;
     }
     .entradas-blog {
         width: unset;
         float: none;
+        margin: 1.5em;
     }
+
+    .contenido-blog {
+        background-color: whitesmoke;
+    }
+
     /* Hacemos que el vídeo ocupe lo necesario */
     article>.video>iframe {
         width: 95%;
@@ -492,10 +501,13 @@ background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 
     aside {
         float: unset;
         width: unset;
+        margin: .5em;
     }
     .entradas-blog {
         width: unset;
         float: none;
+        margin: .5em;
+        padding: 1em 1em;
     }
     /* Hacemos que el vídeo ocupe lo necesario */
     article>.video>iframe {
