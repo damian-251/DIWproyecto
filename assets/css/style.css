@@ -72,13 +72,12 @@ a:visited {
 
 nav {
     position: fixed;
-    right: 0%;
-    left: 220px;
     background-color: #3a3a71;
     font-size: 1.5em;
     color: white;
     box-shadow: 4px 4px 4px 1px rgba(0,0,0,0.47);
-
+    z-index: 2;
+    width: 100%;
 }
 
 nav ul {
@@ -98,7 +97,7 @@ nav li {
     background-color: #3a3a71;
     width: 220px;
     height: 86px;
-    box-shadow: 4px 4px 4px 1px rgba(0,0,0,0.47);
+    z-index: 3;
 
 }
 
@@ -121,11 +120,6 @@ nav li a:active {
     color: white;
 }
 
-/* Interior del menú de navegación */
-
-.menu-text {
-    margin-left: -10%;
-}
 
 
 /* Página princial */
@@ -467,8 +461,10 @@ background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 
         float: none;
         width: unset;
         margin: 1.5em;
-        display: inline-block;
-        padding: 1.5em;
+        display:flex;
+        padding: .5em;
+        justify-content: center;
+        flex-wrap: wrap;
     }
     .entradas-blog {
         width: unset;
