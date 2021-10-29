@@ -1,6 +1,1 @@
-Terminar MediaQueries
-Background color contendor whitesmoke.
-Arreglos menores.
-Poner sombras
-Poner gradiente
-Más interlineado en el menú aside.
+Bajar un poco más la barra de búqueda debido a la sombra del menú.

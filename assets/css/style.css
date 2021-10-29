@@ -32,6 +32,22 @@ html {
     font-size: 1em;
 }
 
+/* Comprobación alt imágenes */
+
+img:not([alt]) {
+    border: 3px solid red;
+}
+
+/* Comprobación enlaces a archivos PDF */
+
+[href$=".pdf"] {
+    background-image: url(../images/pdf_file.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    padding-right: 1.3em;
+    
+}
+
 /* Para que no se superponga encima del menú */
 
 .contenido {
