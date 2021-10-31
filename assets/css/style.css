@@ -194,6 +194,8 @@ nav li a:active {
     padding-right: 2.5em;
     box-shadow: 4px 4px 4px 1px rgba(0,0,0,0.47);
     margin-bottom: 1.5em;
+    margin-left: 1em;
+    box-sizing: border-box;
 
 
 }
@@ -213,9 +215,10 @@ nav li a:active {
 
 aside {
     float: right;
+    box-sizing: border-box;
     width: 25%;
     padding: 10px;
-    margin-right: 2em;
+    margin-right: 1em;
     box-shadow: 4px 4px 4px 1px rgba(0,0,0,0.47);
 }
 
@@ -462,7 +465,7 @@ background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 
 
 /* A más anchura la página se ve prácticamente como en pantalla completa */
 
-@media (max-width: 840px) {
+@media (max-width: 914px) {
     form {
         max-width: 80%;
     }
@@ -547,3 +550,7 @@ background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 
         width: 90%
     }
 }
+
+
+/* Estaría bien un modo intermedio para que el logo se vea sin el texto pero que el menu siga estando entero
+más o menos de 920 a 700px () */
