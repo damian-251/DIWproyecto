@@ -36,32 +36,32 @@
                 </span>
             </ul>
         </nav>
+        <div class="search">
+            <input type="text" placeholder="Buscar..." name="search">
+        </div>
     </header>
 
-    <div class="contenido">
+    <main class="contenido-contacto">
 
-        <div class="search">
-            <input type="text" placeholder="Cercador" name="search">
-        </div>
+
         <section>
             <h1 class="h1-formulario">Formulario de contacto</h1>
             <form id="contactForm">
-                    <label>Nombre</label>
-                    <input name="name" type="text" pattern="[a-zA-Z0-9]{1,30}" required placeholder="Escriu el nom"
-                        autofocus />
-                    <label>Correo electrónico</label>
-                    <input name="email" type="email" required placeholder="Escriu el teu correu" />
-                    <label>Edad</label>
-                    <input name="age" type="text" pattern="1[8-9]|[2-9][0-9]" required
-                        placeholder="Escriu la teua edat">
-                    <label>Teléfono</label>
-                    <input name="phone" type="tel" required placeholder="Ex: 666666666" pattern="[0-9]{9}">
-                    <label>Consulta</label>
-                    <textarea name="textarea" rows="10" cols="50" placeholder="Escriu ací el teu missatge"
-                        required></textarea>
-                    <input type="checkbox" id="privacy" class="input-privacy" required>
-                    <label for="privacy" class="label-privacy">Acepto la política de privacidad y de <i>cookies</i>.</label>
-                    <button id="submit" name="submit" type="submit">Enviar</button>
+                <label>Nombre</label>
+                <input name="name" type="text" pattern="[a-zA-Z0-9]{1,30}" required placeholder="Escriu el nom"
+                    autofocus />
+                <label>Correo electrónico</label>
+                <input name="email" type="email" required placeholder="Escriu el teu correu" />
+                <label>Edad</label>
+                <input name="age" type="text" pattern="1[8-9]|[2-9][0-9]" required placeholder="Escriu la teua edat">
+                <label>Teléfono</label>
+                <input name="phone" type="tel" required placeholder="Ex: 666666666" pattern="[0-9]{9}">
+                <label>Consulta</label>
+                <textarea name="textarea" rows="10" cols="50" placeholder="Escriu ací el teu missatge"
+                    required></textarea>
+                <input type="checkbox" id="privacy" class="input-privacy" required>
+                <label for="privacy" class="label-privacy">Acepto la política de privacidad y de <i>cookies</i>.</label>
+                <button id="submit" name="submit" type="submit">Enviar</button>
             </form>
         </section>
         <section class="datos-contacto">
@@ -69,28 +69,29 @@
             <p>Correu Electrònic: <a href="mailto:empresa@email.com">empresa@email.com</a> </p>
             <p>Telèfon: <a href="tel:+34666569874">+34 666 56 98 74</a></p>
         </section>
+    </main>
 
-        <footer>
-            <div class="redesSociales">
-                <figure class="facbook-figure">
-                    <a href="https://www.facebook.com/site" target="_blank"><img width="50" height="50"
-                            src="assets/images/icons/facebook.png" alt="Facebook"></a>
-                </figure>
-                <figure class="twitter-figure">
-                    <a href="https://www.twitter.com/site" target="_blank"> <img width="50" height="50"
-                            src="assets/images/icons/twitter.png" alt="Twitter"></a>
-                </figure>
-                <figure class="whatsapp-figure">
-                    <a href="https://wa.me/34666569874" target="_blank"> <img width="50" height="50"
-                            src="assets/images/icons/whatsapp.png" alt="WhatsApp"></a>
-                </figure>
-            </div>
-            <div class="contacto">
-                <p><a href="mailto:empresa@email.com">empresa@email.com</a></p>
-                <p><a href="tel:+34666569874">+34 666 56 98 74</a></p>
-            </div>
-        </footer>
-    </div>
+    <footer>
+        <div class="redesSociales">
+            <figure class="facbook-figure">
+                <a href="https://www.facebook.com/site" target="_blank"><img width="50" height="50"
+                        src="assets/images/icons/facebook.png" alt="Facebook"></a>
+            </figure>
+            <figure class="twitter-figure">
+                <a href="https://www.twitter.com/site" target="_blank"> <img width="50" height="50"
+                        src="assets/images/icons/twitter.png" alt="Twitter"></a>
+            </figure>
+            <figure class="whatsapp-figure">
+                <a href="https://wa.me/34666569874" target="_blank"> <img width="50" height="50"
+                        src="assets/images/icons/whatsapp.png" alt="WhatsApp"></a>
+            </figure>
+        </div>
+        <div class="contacto">
+            <p><a href="mailto:empresa@email.com">empresa@email.com</a></p>
+            <p><a href="tel:+34666569874">+34 666 56 98 74</a></p>
+        </div>
+    </footer>
+
 </body>
 
 </html>

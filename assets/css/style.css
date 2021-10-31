@@ -26,10 +26,13 @@
 
 /* Fondo fuera de los contenedores y tamaño de fuente predeterminado */
 
-html {
-    background-color: whitesmoke;
+body {
     color: #353840;
     font-size: 1em;
+}
+
+header {
+    background-color: whitesmoke;
 }
 
 /* Comprobación alt imágenes */
@@ -50,19 +53,14 @@ img:not([alt]) {
 
 /* Para que no se superponga encima del menú */
 
-.contenido {
+main {
     background-color: whitesmoke;
-}
-
-.contenido {
-    padding-top: 90px;
 }
 
 header {
     overflow: hidden;
 
 }
-
 
 div, aside {
     background-color: white;
@@ -166,22 +164,20 @@ nav li a:active {
     box-sizing: border-box;
     width: 50%;
     padding: 12px 20px;
-    margin: 8px auto;
+    margin: 100px auto 30px auto;
     display: block;
 }
 
-/* Arreglo porque no sale la barra de búsqueda como en otras páginas */
-
-.body-blog .search input {
-    margin: 96px auto 30px auto;
-
-}
 
 /* Propiedades de los enlaces del aside del blog */
 
 /* aside */
 
 /* Propiedades del blog */
+
+.body-blog {
+    background-color: whitesmoke;
+}
 
 .contenido-blog {
     max-width: 1000px;
@@ -269,6 +265,10 @@ h3 {
 }
 
 /* FORMULARIO */
+
+.contenido-contacto {
+    background-color: whitesmoke;
+}
 
 .h1-formulario {
     text-align: center;
