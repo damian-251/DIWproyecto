@@ -106,6 +106,10 @@ nav li {
     display: inline;
 }
 
+nav li span {
+    padding-right: .4em;
+}
+
 .header-logo {
     position: fixed;
     background-color: #3a3a71;
@@ -122,16 +126,18 @@ nav li a {
     font-size: 1em;
     text-decoration: none;
     line-height: 86px;
-    padding: 10px;
+    padding: 27px 10px;
 }
 
 nav li a:hover {
     background-color: #4f4f70;
+    transition: background-color .3s ease;
 }
 
 nav li a:active {
     background-color: #353840;
     color: white;
+    transition: background-color .05s linear;
 }
 
 
