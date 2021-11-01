@@ -126,7 +126,8 @@ nav li a {
     font-size: 1em;
     text-decoration: none;
     line-height: 86px;
-    padding: 27px 10px;
+    padding: 20px 10px;
+    border-radius: 10px;
 }
 
 nav li a:hover, nav li a:focus {
