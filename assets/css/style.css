@@ -143,11 +143,11 @@ nav li a:active {
 }
 
 nav>ul>span>li {
-    transition: .4s ease;
+    transition: .2s ease;
 }
 
 nav>ul>span>li:active {
-    transform: scale(0.7);
+    transform: scale(0.80);
 }
 
 /* Página princial */
