@@ -29,6 +29,7 @@
 body {
     color: #353840;
     font-size: 1em;
+    background-color: whitesmoke;
 }
 
 header {
@@ -130,7 +131,6 @@ nav li a {
     padding: 20px 10px;
     border-radius: 10px;
     transition: .3s ease;
-
 }
 
 nav li a:hover, nav li a:focus {
@@ -152,15 +152,35 @@ nav>ul>span>li:active {
 
 /* Página princial */
 
-.contenido-home{
+.contenido-home {
     margin: 0 1.5em;
-    background-color: whitesmoke; 
-
+    background-color: whitesmoke;
 }
 
-.landingPage > * {
+.landingPage>* {
     padding: 0 auto;
-    
+}
+
+.landingPage {
+    position: relative;
+    background-image: url(../images/landingPage.jpg);
+    height: 30em;
+    background-attachment: fixed;
+}
+
+.landingPage h1 {
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px 0px rgb(0, 0, 0);
+}
+
+/* Botón landing page */
+
+.landingPage button {
+    position: absolute;
+    bottom: 1.5em;
+    left: 1.5em;
+
 }
 
 .inicio-secciones {
@@ -173,12 +193,25 @@ nav>ul>span>li:active {
 }
 
 .inicio-secciones section {
+    position: relative;
     box-shadow: 4px 4px 4px 1px rgba(0, 0, 0, 0.47);
     width: 25em;
     height: 25em;
     background-color: white;
     margin: 1.5em;
     padding: 2.5em;
+}
+
+/* Queremos los botones en la parte inferior de los contendeodres */
+
+.inicio-secciones button {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    bottom: 1.5em;
 }
 
 /* Barra de búsqueda */
@@ -301,8 +334,10 @@ h3 {
 
 /* FORMULARIO */
 
-.contenido-contacto {
-    background-color: whitesmoke;
+main.contenido-servicios {
+    max-width: 62.5em;
+    margin: 1em auto 4em auto;
+    text-align: center;
 }
 
 .h1-formulario {
@@ -334,7 +369,9 @@ form input, form textarea {
     padding: 1em;
 }
 
-form button {
+/* Estilo de los botones por defecto */
+
+button {
     display: block;
     font-size: 1.1em;
     margin: 1em;
@@ -345,9 +382,14 @@ form button {
     background-color: #3a3a71;
 }
 
-form button:hover {
+button:hover {
     background-color: #4f4f70;
     color: aliceblue;
+}
+
+button:active {
+    background-color: #353840;
+    color: white;
 }
 
 /* Alienar checkbox con el texto */
