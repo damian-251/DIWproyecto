@@ -1,1 +1,0 @@
-Bajar un poco más la barra de búqueda debido a la sombra del menú.

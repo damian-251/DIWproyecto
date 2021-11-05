@@ -84,7 +84,7 @@ a:visited {
 
 nav {
     position: fixed;
-    background-color: #3a3a71;
+    background-color: #3a3a71f6;
     font-size: 1.5em;
     color: white;
     box-shadow: 4px 4px 4px 1px rgba(0, 0, 0, 0.47);
@@ -108,9 +108,14 @@ nav li span {
     padding-right: .4em;
 }
 
+nav>ul>span>li>a>span:nth-child(2n){
+    margin: unset;
+    padding: unset;
+}
+
 .header-logo {
     position: fixed;
-    background-color: #3a3a71;
+    background-color: #3a3a7100 ;
     height: 70px;
     z-index: 3;
     margin: .5em;
@@ -162,16 +167,28 @@ nav>ul>span>li:active {
 }
 
 .landingPage {
-    position: relative;
     background-image: url(../images/landingPage.jpg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
     height: 30em;
     background-attachment: fixed;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.landingPage > div {
+    margin: 0 auto;
+    position: relative;
+    max-width: 62.5em ;
+    height: 30em;
+    background-color: rgba(0, 0, 0, 0);
 }
 
 .landingPage h1 {
     color: white;
     text-align: center;
     text-shadow: 2px 2px 0px rgb(0, 0, 0);
+    padding-top: .5em;
 }
 
 /* Botón landing page */
@@ -544,15 +561,12 @@ footer .whatsapp-figure a:hover img {
 
 /* A más anchura la página se ve prácticamente como en pantalla completa */
 
-@media (max-width: 914px) {
+@media (min-width: 401px) and (max-width: 914px) { 
     form {
         max-width: 80%;
     }
     form button {
         margin: 1em auto 1em auto;
-    }
-    nav {
-        display: none;
     }
     /* Propiedades blog */
     aside {
@@ -581,14 +595,66 @@ footer .whatsapp-figure a:hover img {
     }
 }
 
+/* Para móviles */
 @media (max-width: 400px) {
-    /* Reducir el tamaño del logo
-    Hacemos que deje de estar fijo */
+    /* Reducir el tamaño del logo */
     .header-logo {
-        position: absolute;
-        width: 154px;
-        height: 60px;
+        display: none;
     }
+
+    /* Menú principal para móviles */
+
+    nav li a  {
+        line-height: 2.5em;
+        padding: .5em;
+    }
+
+    /*Eliminamos el texto del menú*/
+    nav>ul>span>li>a>span:nth-child(2n){
+        display: none;
+    }
+
+    nav li span {
+        padding: unset;
+        margin: 0 .5em;
+    }
+
+    /* Propiedades de la página principal */
+
+    .contenido-home {
+        margin: 0 .5em;
+    }
+        
+    /* Botón landing page */
+    
+    .landingPage button {
+        left: 0;
+        right: 0;
+        margin-right: auto;
+        margin-left: auto;
+    
+    }
+    
+    .inicio-secciones {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+        background-color: whitesmoke;
+        list-style-position: inside;
+    }
+    
+    .inicio-secciones section {
+        position: relative;
+        box-shadow: 4px 4px 4px 1px rgba(0, 0, 0, 0.47);
+        width: 25em;
+        height: 25em;
+        background-color: white;
+        margin: .5em;
+        padding: 1.5em;
+    }
+    
+
     /* Propiedades blog */
     aside {
         float: unset;
@@ -607,10 +673,7 @@ footer .whatsapp-figure a:hover img {
     article>.video>iframe {
         width: auto;
     }
-    /*Eliminamos el menú hasta que no implementemos el menú hamburguesa */
-    nav {
-        display: none;
-    }
+
     /* Formulario de contacto */
     /* Hacemos que ocupe más porcentaje de la pantalla*/
     form {
