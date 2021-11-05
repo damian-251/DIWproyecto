@@ -638,24 +638,15 @@ footer .whatsapp-figure a:hover img {
         width: 233px;
     
     }
-    
-    .inicio-secciones {
-        align-items: center;
-        justify-content: center;
-        display: flex;
-        flex-wrap: wrap;
-        background-color: whitesmoke;
-        list-style-position: inside;
+
+    .landingPage h1 {
+        margin-left: .5em;
+        margin-right: .5em;
     }
-    
+
+  
     .inicio-secciones section {
-        position: relative;
-        box-shadow: 4px 4px 4px 1px rgba(0, 0, 0, 0.47);
-        width: 25em;
-        height: 25em;
-        background-color: white;
         margin: .5em;
-        padding: 1.5em;
     }
     
 
@@ -692,6 +683,10 @@ footer .whatsapp-figure a:hover img {
     /* -- BARRA DE BÚSQUEDA */
     .search input {
         width: 90%
+    }
+
+    footer {
+        margin-top: 1.5em;
     }
 }
 
