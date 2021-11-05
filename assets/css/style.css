@@ -108,18 +108,22 @@ nav li span {
     padding-right: .4em;
 }
 
-nav>ul>span>li>a>span:nth-child(2n){
+nav>ul>span>li>a>span:nth-child(2n) {
     margin: unset;
     padding: unset;
 }
 
 .header-logo {
     position: fixed;
-    background-color: #3a3a7100 ;
+    background-color: #3a3a7100;
     height: 70px;
     z-index: 3;
     margin: .5em;
     transition: .2s linear;
+}
+
+.logo-movil {
+    display: none;
 }
 
 .logo a:hover img {
@@ -176,10 +180,10 @@ nav>ul>span>li:active {
     background-color: rgba(0, 0, 0, 0);
 }
 
-.landingPage > div {
+.landingPage>div {
     margin: 0 auto;
     position: relative;
-    max-width: 62.5em ;
+    max-width: 62.5em;
     height: 30em;
     background-color: rgba(0, 0, 0, 0);
 }
@@ -197,7 +201,6 @@ nav>ul>span>li:active {
     position: absolute;
     bottom: 1.5em;
     left: 1.5em;
-
 }
 
 .inicio-secciones {
@@ -450,6 +453,10 @@ button:active {
     box-shadow: 4px 4px 4px 1px rgba(0, 0, 0, 0.47);
 }
 
+.div-servicios-movil {
+    display: none;
+}
+
 .tabla-servicios {
     caption-side: bottom;
     table-layout: auto;
@@ -474,6 +481,10 @@ tr:nth-child(even) {
 
 .tabla-servicios:first-child th {
     background-color: gainsboro;
+}
+
+.contacto-movil {
+    display: none;
 }
 
 /* Footer  */
@@ -557,13 +568,30 @@ footer .whatsapp-figure a:hover img {
     background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 47%, rgba(255, 255, 255, 1) 100%);
 }
 
-/* Media Queries */
+/*------------- Media Queries--------------------- */
 
 /* Aplicamos al blog para probar */
 
 /* A más anchura la página se ve prácticamente como en pantalla completa */
 
-@media (min-width: 401px) and (max-width: 914px) { 
+@media (min-width: 400px) and (max-width: 914px) {
+    .logo {
+        display: none;
+    }
+    .logo-movil {
+        display: block;
+    }
+    nav li a {
+        line-height: 3.5em;
+        padding: .5em;
+    }
+    /*Eliminamos el texto del menú*/
+    nav>ul>span>li>a>span:nth-child(2n) {
+        display: none;
+    }
+    nav li span {
+        padding: .3em;
+    }
     form {
         max-width: 80%;
     }
@@ -595,61 +623,25 @@ footer .whatsapp-figure a:hover img {
     .search input {
         width: 80%
     }
-}
-
-/* Para móviles */
-@media (max-width: 400px) {
-    /* Reducir el tamaño del logo */
-    .header-logo {
-        display: none;
-    }
-
-    /* Menú principal para móviles */
-
-    nav li a  {
-        line-height: 2.5em;
-        padding: .5em;
-    }
-
-    /*Eliminamos el texto del menú*/
-    nav>ul>span>li>a>span:nth-child(2n){
-        display: none;
-    }
-
-    nav li span {
-        padding: unset;
-        margin: 0 .5em;
-    }
-
     /* Propiedades de la página principal */
-
     .contenido-home {
         margin: 0 .5em;
     }
-        
     /* Botón landing page */
-    
     .landingPage button {
         left: 0;
         right: 0;
         margin-right: auto;
         margin-left: auto;
-
         width: 233px;
-    
     }
-
     .landingPage h1 {
         margin-left: .5em;
         margin-right: .5em;
     }
-
-  
     .inicio-secciones section {
         margin: .5em;
     }
-    
-
     /* Propiedades blog */
     aside {
         float: unset;
@@ -668,7 +660,6 @@ footer .whatsapp-figure a:hover img {
     article>.video>iframe {
         width: auto;
     }
-
     /* Formulario de contacto */
     /* Hacemos que ocupe más porcentaje de la pantalla*/
     form {
@@ -679,16 +670,140 @@ footer .whatsapp-figure a:hover img {
         font-size: unset;
         margin: 1em auto 1em auto;
     }
+    /* Sección de servicios */
+    .table-desktop th {
+        display: none;
+    }
     /* --- SERVICIOS --- */
     /* -- BARRA DE BÚSQUEDA */
     .search input {
         width: 90%
     }
+    .div-servicios-movil {
+        display: block;
+        margin: .5em;
+        box-shadow: 4px 4px 4px 1px rgba(0, 0, 0, 0.47);
+    }
+    .div-servicios-movil table td {
+        padding: .5em;
+    }
+    .body-servicios h1 {
+        margin: .5em auto;
+    }
+    .contacto-movil {
+        display: block;
+        margin: .5em;
+        padding: 1.5em;
+        box-shadow: 4px 4px 4px 1px rgba(0, 0, 0, 0.47);
+    }
+    .div-servicios {
+        display: none;
+    }
+    footer {
+        margin-top: 1.5em;
+    }
 
+}
+
+/*--------------------------------------------------- */
+
+/* Para móviles */
+
+@media (max-width: 400px) {
+    /* Reducir el tamaño del logo */
+    .header-logo {
+        display: none;
+    }
+    /* Menú principal para móviles */
+    nav li a {
+        line-height: 2.5em;
+        padding: .5em;
+    }
+    /*Eliminamos el texto del menú*/
+    nav>ul>span>li>a>span:nth-child(2n) {
+        display: none;
+    }
+    nav li span {
+        padding: unset;
+        margin: 0 .5em;
+    }
+    /* Propiedades de la página principal */
+    .contenido-home {
+        margin: 0 .5em;
+    }
+    /* Botón landing page */
+    .landingPage button {
+        left: 0;
+        right: 0;
+        margin-right: auto;
+        margin-left: auto;
+        width: 233px;
+    }
+    .landingPage h1 {
+        margin-left: .5em;
+        margin-right: .5em;
+    }
+    .inicio-secciones section {
+        margin: .5em;
+    }
+    /* Propiedades blog */
+    aside {
+        float: unset;
+        width: unset;
+        margin: .5em;
+        display: flex;
+        padding: .5em;
+    }
+    .entradas-blog {
+        width: unset;
+        float: none;
+        margin: .5em;
+        padding: 1em 1em;
+    }
+    /* Hacemos que el vídeo ocupe lo necesario */
+    article>.video>iframe {
+        width: auto;
+    }
+    /* Formulario de contacto */
+    /* Hacemos que ocupe más porcentaje de la pantalla*/
+    form {
+        max-width: 90%;
+    }
+    /* Botón enviar centrado y algo más pequeño */
+    form button {
+        font-size: unset;
+        margin: 1em auto 1em auto;
+    }
+    /* Sección de servicios */
+    .table-desktop th {
+        display: none;
+    }
+    /* --- SERVICIOS --- */
+    /* -- BARRA DE BÚSQUEDA */
+    .search input {
+        width: 90%
+    }
+    .div-servicios-movil {
+        display: block;
+        margin: .5em;
+        box-shadow: 4px 4px 4px 1px rgba(0, 0, 0, 0.47);
+    }
+    .div-servicios-movil table td {
+        padding: .5em;
+    }
+    .body-servicios h1 {
+        margin: .5em auto;
+    }
+    .contacto-movil {
+        display: block;
+        margin: .5em;
+        padding: 1.5em;
+        box-shadow: 4px 4px 4px 1px rgba(0, 0, 0, 0.47);
+    }
+    .div-servicios {
+        display: none;
+    }
     footer {
         margin-top: 1.5em;
     }
 }
-
-/* Estaría bien un modo intermedio para que el logo se vea sin el texto pero que el menu siga estando entero
-más o menos de 920 a 700px () */
