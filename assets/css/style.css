@@ -574,7 +574,7 @@ footer .whatsapp-figure a:hover img {
 
 /* A más anchura la página se ve prácticamente como en pantalla completa */
 
-@media (min-width: 400px) and (max-width: 914px) {
+@media (min-width: 438px) and (max-width: 914px) {
     .logo {
         display: none;
     }
@@ -584,7 +584,15 @@ footer .whatsapp-figure a:hover img {
     nav li a {
         line-height: 3.5em;
         padding: .5em;
+        margin: inherit .5em;
     }
+
+    
+    nav ul span {
+        margin: 0 .5em;
+   
+    }
+
     /*Eliminamos el texto del menú*/
     nav>ul>span>li>a>span:nth-child(2n) {
         display: none;
@@ -709,7 +717,7 @@ footer .whatsapp-figure a:hover img {
 
 /* Para móviles */
 
-@media (max-width: 400px) {
+@media (max-width: 438px) {
     /* Reducir el tamaño del logo */
     .header-logo {
         display: none;
@@ -727,6 +735,7 @@ footer .whatsapp-figure a:hover img {
         padding: unset;
         margin: 0 .5em;
     }
+
     /* Propiedades de la página principal */
     .contenido-home {
         margin: 0 .5em;
