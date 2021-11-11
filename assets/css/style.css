@@ -195,6 +195,7 @@ nav>ul>span>li:active {
     padding-top: .5em;
 }
 
+
 /* Botón landing page */
 
 .landingPage button {
@@ -571,8 +572,6 @@ footer .whatsapp-figure a:hover img {
 /*------------- Media Queries--------------------- */
 
 /* Aplicamos al blog para probar */
-
-/* A más anchura la página se ve prácticamente como en pantalla completa */
 
 @media (min-width: 438px) and (max-width: 914px) {
     .logo {
