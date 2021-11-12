@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
 @font-face {
     font-family: 'pt_serifregular';
     src: local('pt_serifregular'), url("../webfonts/PTSerif-Regular.ttf") format('truetype'), url("../webfonts/ptserif-regular-webfont.woff2") format('woff2'), url("../webfonts/ptserif-regular-webfont.woff") format('woff'), url("../webfonts/PTSerif-Regular.eot") format('eot'), url("../webfonts/PTSerif-Regular.svg") format('svg');
@@ -13,7 +16,7 @@
     src: local('pt_serifbold_italic'), url("../webfonts/PTSerif-BoldItalic.ttf") format('ttf'), url("../webfonts/ptserif-bolditalic-webfont.woff2") format('woff2'), url("../webfonts/ptserif-bolditalic-webfont.woff") format('woff');
 }
 
-@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 /* Web en general */
 
 * {
@@ -164,10 +167,6 @@ nav>ul>span>li:active {
 .contenido-home {
     margin: 0 1.5em;
     background-color: whitesmoke;
-}
-
-.landingPage>* {
-    padding: 0 auto;
 }
 
 .landingPage {
@@ -583,7 +582,6 @@ footer .whatsapp-figure a:hover img {
     nav li a {
         line-height: 3.5em;
         padding: .5em;
-        margin: inherit .5em;
     }
 
     
