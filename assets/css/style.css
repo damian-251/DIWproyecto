@@ -590,6 +590,7 @@ footer .whatsapp-figure a:hover img {
    
     }
 
+
     /*Eliminamos el texto del menú*/
     nav>ul>span>li>a>span:nth-child(2n) {
         display: none;
