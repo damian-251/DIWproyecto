@@ -334,6 +334,10 @@ article .overflow-padre p {
     padding: 1.5em;
 }
 
+.control-video label {
+    display: inline;
+}
+
 /* Cabeceras */
 
 h1, h2 {
@@ -404,12 +408,20 @@ button {
     background-color: #3a3a71;
 }
 
-button:hover {
+/*Modificamos los botones del vídeo para adaptarlos al estilo de la página*/
+.control-video input[type="button"] {
+    padding: .5rem;
+    border: 0;
+    color: white;
+    background-color: #3a3a71;
+}
+
+button:hover, input[type="button"]:hover {
     background-color: #4f4f70;
     color: aliceblue;
 }
 
-button:active {
+button:active, input[type="button"]:active {
     background-color: #353840;
     color: white;
 }
@@ -622,6 +634,8 @@ footer .whatsapp-figure a:hover img {
     .contenido-blog {
         background-color: whitesmoke;
     }
+
+
     /* Hacemos que el vídeo ocupe lo necesario */
     article>.video>iframe {
         width: 95%;
