@@ -39,6 +39,30 @@ header {
     background-color: whitesmoke;
 }
 
+.menu {
+    background-image: url(../images/logo.png);
+    background-repeat: no-repeat;
+    background-size: 12%;
+    background-position: .5rem;
+    animation-name: fade;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+}
+    
+  @keyframes fade {
+      0% {
+          background-image: url('../images/logo.png');
+      }
+
+  
+      50% {
+        background-image: url('../images/logo-2.png');
+      }
+  
+      100% {
+          background-image: url('../images/logo.png');
+      }
+  }
 /* Comprobación alt imágenes */
 
 img:not([alt]) {
@@ -53,6 +77,7 @@ img:not([alt]) {
     background-position: right;
     padding-right: 1.3em;
 }
+
 
 /* Para que no se superponga encima del menú */
 
@@ -820,6 +845,11 @@ footer .whatsapp-figure a:hover img {
         margin: .5em;
         padding: 1.5em;
         box-shadow: 4px 4px 4px 1px rgba(0, 0, 0, 0.47);
+    }
+
+    .menu {
+        background-image: none;
+        animation: none;
     }
     .div-servicios {
         display: none;

@@ -14,9 +14,3 @@ Array.from(botonesAudio, function(botonAudio, i) {
     });
     i++;
 });
-
-
-
-
-
-
