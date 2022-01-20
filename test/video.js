@@ -14,8 +14,8 @@ function accionReiniciar() {
     medio.play();
     play.value = '||';
     document.body.style.backgroundColor = 'grey';
-
 }
+
 function accionRetrasar() {
     if (medio.currentTime > 5) {
         medio.currentTime -= 5;

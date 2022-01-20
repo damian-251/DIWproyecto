@@ -1,6 +1,9 @@
     let botonesVideo = document.getElementsByClassName("control-video")[0];
     let fondoArticulo = document.getElementsByClassName("entradas-blog");
+    let asideBlog = document.querySelectorAll(".aside-blog div");
     let valorVolumen = document.getElementById("valor-volumen");
+    let aside = document.getElementsByClassName("aside-blog")[0];
+    console.log(aside);
     valorVolumen.innerText = Math.round(medio.volume*100) + "%";
 
     console.log(botonesVideo);
@@ -9,7 +12,11 @@
         for (const elemento of fondoArticulo) {
             elemento.style.backgroundColor = color;
         }
+        for (const elemento of asideBlog) {
+            elemento.style.backgroundColor = color;
+        }
         botonesVideo.style.backgroundColor = color;
+        aside.style.backgroundColor = color;
     }
     
 
@@ -33,6 +40,7 @@ function accionReiniciar() {
     medio.play();
     play.value = '||';
     document.body.style.backgroundColor = 'grey';
+    colorArticulo("grey");
 
 }
 function accionRetrasar() {

@@ -409,7 +409,7 @@ button {
 }
 
 /*Modificamos los botones del vídeo para adaptarlos al estilo de la página*/
-.control-video input[type="button"] {
+input[type="button"] {
     padding: .5rem;
     border: 0;
     color: white;
