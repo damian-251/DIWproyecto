@@ -39,17 +39,36 @@ header {
     background-color: whitesmoke;
 }
 
+/* Animamos la imagen del menú */
 .menu {
     background-image: url(../images/logo.png);
     background-repeat: no-repeat;
     background-size: 12%;
     background-position: .5rem;
-    animation-name: fade;
-    animation-iteration-count: infinite;
-    animation-duration: 1s;
+    -webkit-animation-name: animacion;
+            animation-name: animacion;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-duration: .5s;
+            animation-duration: .5s;
 }
     
-  @keyframes fade {
+  @-webkit-keyframes animacion {
+      0% {
+          background-image: url('../images/logo.png');
+      }
+
+  
+      50% {
+        background-image: url('../images/logo-2.png');
+      }
+  
+      100% {
+          background-image: url('../images/logo.png');
+      }
+  }
+    
+  @keyframes animacion {
       0% {
           background-image: url('../images/logo.png');
       }
@@ -347,6 +366,47 @@ aside ul li a:hover {
     padding-bottom: 1.5em;
 }
 
+
+/* Animación en el párrafo de prueba */
+
+.img-animation {
+    -webkit-animation-duration: 5s;
+            animation-duration: 5s;
+    -webkit-animation-name: animacion-imagen;
+            animation-name: animacion-imagen;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    width: 80%;
+}
+
+@-webkit-keyframes animacion-imagen {
+    0% {
+        scale: 1;
+        
+    }
+    50%{ 
+        box-shadow: 5px 5px 15px 5px rgba(58,58,113,0.68);        
+        scale: .7;
+    }
+    100%{
+        scale: 1;
+        }
+}
+
+@keyframes animacion-imagen {
+    0% {
+        scale: 1;
+        
+    }
+    50%{ 
+        box-shadow: 5px 5px 15px 5px rgba(58,58,113,0.68);        
+        scale: .7;
+    }
+    100%{
+        scale: 1;
+        }
+}
+
 /* Artículo con overflow scroll */
 
 article .overflow-padre {
@@ -607,8 +667,7 @@ footer .whatsapp-figure a:hover img {
 
 /*------------- Media Queries--------------------- */
 
-/* Aplicamos al blog para probar */
-
+/* Tamaño intermedio (tablet) */
 @media (min-width: 438px) and (max-width: 914px) {
     .logo {
         display: none;
@@ -626,6 +685,42 @@ footer .whatsapp-figure a:hover img {
         margin: 0 .5em;
    
     }
+
+    /* Animamos la imagen del menú */
+    .menu {
+        background-image: url(../images/logo-medium.png);
+        background-size: 4rem;
+}
+    
+  @-webkit-keyframes animacion {
+      0% {
+          background-image: url('../images/logo-medium.png');
+      }
+
+  
+      50% {
+        background-image: url('../images/logo-medium-2.png');
+      }
+  
+      100% {
+          background-image: url('../images/logo-medium.png');
+      }
+  }
+    
+  @keyframes animacion {
+      0% {
+          background-image: url('../images/logo-medium.png');
+      }
+
+  
+      50% {
+        background-image: url('../images/logo-medium-2.png');
+      }
+  
+      100% {
+          background-image: url('../images/logo-medium.png');
+      }
+  }
 
 
     /*Eliminamos el texto del menú*/
@@ -659,8 +754,7 @@ footer .whatsapp-figure a:hover img {
     .contenido-blog {
         background-color: whitesmoke;
     }
-
-
+    
     /* Hacemos que el vídeo ocupe lo necesario */
     article>.video>iframe {
         width: 95%;
@@ -849,7 +943,8 @@ footer .whatsapp-figure a:hover img {
 
     .menu {
         background-image: none;
-        animation: none;
+        -webkit-animation: none;
+                animation: none;
     }
     .div-servicios {
         display: none;
