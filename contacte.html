@@ -18,16 +18,14 @@
 
         <nav class="menu">
             <ul>
-                <span class="menu-text">                   
                     <li><a href="index.html"><span class="icon" id="iconaw4"><i class="fas fa-home"></i></span><span>Inicio</span></a></li>                  
                     <li><a href="contacte.html"><span class="icon" id="iconaw5"><i class="fas fa-envelope-open-text"></i></span><span>Contacto</span></a></li>                  
                     <li><a href="serveis.html"><span class="icon" id="iconaw6"><i class="fas fa-flask"></i></span><span>Servicios</span></a></li>                  
                     <li><a href="blog.html"><span class="icon" id="iconaw7"><i class="fas fa-clipboard-list"></i></span><span>Blog</span></a></li>
-                </span>
             </ul>
         </nav>
         <div class="search">
-            <input type="text" placeholder="Buscar..." name="search">
+            <input type="text" placeholder="Buscar..." name="search" title="buscar">
         </div>
     </header>
 
@@ -37,17 +35,17 @@
             <form id="contactForm">
                 <label>Nombre</label>
                 <input name="name" type="text" pattern="[a-zA-Z0-9]{1,30}" required placeholder="Escriu el nom"
-                    autofocus />
+                    autofocus title="nombre" />
                 <label>Correo electrónico</label>
-                <input name="email" type="email" required placeholder="Escriu el teu correu" />
+                <input name="email" type="email" required placeholder="Escriu el teu correu" title="email" />
                 <label>Edad</label>
-                <input name="age" type="text" pattern="1[8-9]|[2-9][0-9]" required placeholder="Escriu la teua edat">
+                <input name="age" type="text" pattern="1[8-9]|[2-9][0-9]" title="edad" required placeholder="Escriu la teua edat">
                 <label>Teléfono</label>
-                <input name="phone" type="tel" required placeholder="Ex: 666666666" pattern="[0-9]{9}">
+                <input name="phone" type="tel" title="telefono" required placeholder="Ex: 666666666" pattern="[0-9]{9}">
                 <label>Consulta</label>
-                <textarea name="textarea" rows="10" cols="50" placeholder="Escriu ací el teu missatge"
+                <textarea name="textarea" title="Mensaje a enviar" rows="10" cols="50" placeholder="Escriu ací el teu missatge"
                     required></textarea>
-                <input type="checkbox" id="privacy" class="input-privacy" required>
+                <input type="checkbox" id="privacy" class="input-privacy" title="confirmación política de privacidad" required>
                 <label for="privacy" class="label-privacy">Acepto la política de privacidad y de <i>cookies</i>.</label>
                 <button id="submit" name="submit" type="submit">Enviar</button>
             </form>
