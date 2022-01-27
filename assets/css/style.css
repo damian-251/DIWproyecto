@@ -360,7 +360,8 @@ aside ul li {
 }
 
 aside ul li a:hover {
-    color: rgb(184, 218, 238);
+    color: #272749;
+    font-weight: bold;
 }
 
 .aside-blog div {
