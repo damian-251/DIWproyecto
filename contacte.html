@@ -33,16 +33,16 @@
         <section>
             <h1 class="h1-formulario">Formulario de contacto</h1>
             <form id="contactForm">
-                <label>Nombre</label>
+                <label for="name">Nombre</label>
                 <input name="name" type="text" pattern="[a-zA-Z0-9]{1,30}" required placeholder="Escriu el nom"
                     autofocus title="nombre" />
-                <label>Correo electrónico</label>
+                <label for="email">Correo electrónico</label>
                 <input name="email" type="email" required placeholder="Escriu el teu correu" title="email" />
-                <label>Edad</label>
+                <label for="age">Edad</label>
                 <input name="age" type="text" pattern="1[8-9]|[2-9][0-9]" title="edad" required placeholder="Escriu la teua edat">
-                <label>Teléfono</label>
+                <label for="phone">Teléfono</label>
                 <input name="phone" type="tel" title="telefono" required placeholder="Ex: 666666666" pattern="[0-9]{9}">
-                <label>Consulta</label>
+                <label for="textarea">Consulta</label>
                 <textarea name="textarea" title="Mensaje a enviar" rows="10" cols="50" placeholder="Escriu ací el teu missatge"
                     required></textarea>
                 <input type="checkbox" id="privacy" class="input-privacy" title="confirmación política de privacidad" required>
