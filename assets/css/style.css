@@ -953,6 +953,8 @@ footer .whatsapp-figure a:hover img {
         display: none;
     }
     footer {
+        clear: both;
         margin-top: 1.5em;
     }
+
 }

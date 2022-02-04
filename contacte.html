@@ -25,7 +25,7 @@
             </ul>
         </nav>
         <div class="search">
-            <input type="text" placeholder="Buscar..." name="search" title="buscar">
+            <input type="text" placeholder="Buscar..." name="search" title="buscar" role="search">
         </div>
     </header>
 
@@ -34,20 +34,20 @@
             <h1 class="h1-formulario">Formulario de contacto</h1>
             <form id="contactForm">
                 <label for="name">Nombre</label>
-                <input name="name" type="text" pattern="[a-zA-Z0-9]{1,30}" required placeholder="Escriu el nom"
+                <input id="name" name="name" type="text" pattern="[a-zA-Z0-9]{1,30}" required placeholder="Escriu el nom"
                     autofocus title="nombre" />
                 <label for="email">Correo electrónico</label>
-                <input name="email" type="email" required placeholder="Escriu el teu correu" title="email" />
+                <input name="email" type="email" id="email" required placeholder="Escriu el teu correu" title="email" />
                 <label for="age">Edad</label>
-                <input name="age" type="text" pattern="1[8-9]|[2-9][0-9]" title="edad" required placeholder="Escriu la teua edat">
+                <input id="age" name="age" type="text" pattern="1[8-9]|[2-9][0-9]" title="edad" required placeholder="Escriu la teua edat">
                 <label for="phone">Teléfono</label>
-                <input name="phone" type="tel" title="telefono" required placeholder="Ex: 666666666" pattern="[0-9]{9}">
+                <input id="phone" name="phone" type="tel" title="telefono" required placeholder="Ex: 666666666" pattern="[0-9]{9}">
                 <label for="textarea">Consulta</label>
-                <textarea name="textarea" title="Mensaje a enviar" rows="10" cols="50" placeholder="Escriu ací el teu missatge"
+                <textarea id="textarea" name="textarea" title="Mensaje a enviar" rows="10" cols="50" placeholder="Escriu ací el teu missatge"
                     required></textarea>
                 <input type="checkbox" id="privacy" class="input-privacy" title="confirmación política de privacidad" required>
                 <label for="privacy" class="label-privacy">Acepto la política de privacidad y de <i>cookies</i>.</label>
-                <button id="submit" name="submit" type="submit">Enviar</button>
+                <button title="Enviar formulario" id="submit" name="submit" type="submit">Enviar</button>
             </form>
         </section>
         <section class="datos-contacto">
