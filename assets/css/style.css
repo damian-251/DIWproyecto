@@ -668,6 +668,36 @@ footer .whatsapp-figure a:hover img {
     background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 47%, rgba(255, 255, 255, 1) 100%);
 }
 
+
+/* Flecha para ir hacia arriba */
+#toTop {
+	display: block;
+	position: fixed;
+	top: 78%;
+    right: -.5rem;
+    font-size: 3em; 
+}
+
+#toTop img {
+    width: 6rem;
+}
+
+
+
+/* -- Menú   --  */
+
+#trigger{
+    background: #3a3a71;
+    height: 3rem;
+    color:white;
+    text-decoration:none;;
+    padding:5px;
+    text-align:center;
+    display:none;
+    font-size: 1.6rem;
+
+  }
+
 /*------------- Media Queries--------------------- */
 
 /* Tamaño intermedio (tablet) */
@@ -862,13 +892,12 @@ footer .whatsapp-figure a:hover img {
         padding: .5em;
     }
     /*Eliminamos el texto del menú*/
-    nav>ul>span>li>a>span:nth-child(2n) {
-        display: none;
+ 
+
+    nav>ul>span>li {
+        display: block;
     }
-    nav li span {
-        padding: unset;
-        margin: 0 .5em;
-    }
+   
 
     /* Propiedades de la página principal */
     .contenido-home {
@@ -957,4 +986,25 @@ footer .whatsapp-figure a:hover img {
         margin-top: 1.5em;
     }
 
+    /* Menú hamburguesa que se despliega */
+    #trigger{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      nav{
+        display:none;
+      }
+      
+      nav a{
+        width:100%;
+      }
+
+      nav {
+          position: relative;
+      }
+      
+      
+
+    
 }

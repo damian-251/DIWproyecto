@@ -11,16 +11,21 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" type="text/css" media="print" href="assets/css/printStyle.css" />
     <script src="https://kit.fontawesome.com/73d911bc85.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
 </head>
 <body>
     <header>
+        <a href="/" id="trigger">Menú</a>
+
         <nav class="menu">
             <ul>
+                <span class="menu-text">                   
                     <li><a href="index.html"><span class="icon" id="iconaw4"><i class="fas fa-home"></i></span><span>Inicio</span></a></li>                  
                     <li><a href="contacte.html"><span class="icon" id="iconaw5"><i class="fas fa-envelope-open-text"></i></span><span>Contacto</span></a></li>                  
                     <li><a href="serveis.html"><span class="icon" id="iconaw6"><i class="fas fa-flask"></i></span><span>Servicios</span></a></li>                  
                     <li><a href="blog.html"><span class="icon" id="iconaw7"><i class="fas fa-clipboard-list"></i></span><span>Blog</span></a></li>
+                </span>
             </ul>
         </nav>
         <div class="search">
@@ -95,6 +100,9 @@
             <p><a href="tel:+34666569874">+34 666 56 98 74</a></p>
         </div>
     </footer>
+    <a id="toTop" href="#"> <img src="./assets/images/arrow.png" alt="Ir hacia arriba"></a>
+    <script src="./assets/js/buttonup.js"></script>
+    <script src="./assets//js/menu.js"></script>
 </body>
 
 </html>
